@@ -15,7 +15,7 @@ public class BinaryToNumber {
 
     }
 
-    private static double convertBinaryToNumber(int number) {
+    public static double convertBinaryToNumber(int number) {
         int result = 0;
         long power = 0;
         while(number > 0){

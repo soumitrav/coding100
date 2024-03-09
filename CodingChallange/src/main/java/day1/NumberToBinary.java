@@ -5,16 +5,18 @@ import java.util.Stack;
 
 public class NumberToBinary {
 
-    public static void printNumberToBinary(int number){
+    public static int printNumberToBinary(int number){
         Stack<Integer> stack = new Stack<>();
         while(number >0) {
             int rem = number %2;
             stack.push(rem);
             number = number/2;
         }
+        StringBuilder result = new StringBuilder();
         while(stack.size() > 0) {
-            System.out.print(stack.pop());
+            result.append(stack.pop());
         }
+        return Integer.valueOf(result.toString());
     }
     public static void main(String []args) {
         System.out.println("Enter number to convert to Binary");
