@@ -1,20 +1,21 @@
-import day1.MergeSort;
+package day2;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class MergeSortTest {
+public class InsertionSortTest {
 
     @Test
-    public void testMergeSort(){
+    public void testInsertionSort(){
         int [] arr = {5,7,2,3,4};
-        MergeSort.sort(arr, 0, arr.length-1);
+        InsertionSort.sort(arr);
         Assertions.assertArrayEquals(new int[]{ 2, 3, 4, 5, 7}, arr);
     }
 
     @Test
-    public void testMergeSort1() {
+    public void testSInsertionSort1() {
         int [] arr = {5,7,2,3,4,1};
-        MergeSort.sort(arr, 0, arr.length-1);
+        InsertionSort.sort(arr);
         Assertions.assertArrayEquals(new int[]{ 1,2, 3, 4, 5, 7}, arr);
     }
 }

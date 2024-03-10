@@ -1,3 +1,5 @@
+package day1;
+
 import day1.BinarySearch;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

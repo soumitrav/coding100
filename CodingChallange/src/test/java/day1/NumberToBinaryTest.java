@@ -1,3 +1,5 @@
+package day1;
+
 import day1.BinaryToNumber;
 import day1.NumberToBinary;
 import org.junit.jupiter.api.Assertions;
